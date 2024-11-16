@@ -18,18 +18,20 @@ rgrep is a Ruby command-line utility designed to search plain-text data files fo
 
 ## Introduction
 
+<img src="assets/rgrep-logo.png" alt="rgrep Logo" width="200" />
+
 `rgrep` provides powerful pattern-matching capabilities using command-line options. It supports multiple search modes, including word search, regular expression search, and negated matching. Additional functionalities allow users to count or extract matches. With its simple interface, `rgrep` is a handy tool for text processing tasks.
 
 ---
 
 ## Features
 
-- Search for specific words or patterns in files.
-- Supports regular expressions for advanced pattern matching.
-- Option to exclude lines that match a pattern.
-- Count the number of matching lines.
-- Extract matching portions from the text.
-- Built-in error handling for invalid options or arguments.
+- 🔍 Search for specific words or patterns in files.
+- 📜 Supports regular expressions for advanced pattern matching.
+- ❌ Option to exclude lines that match a pattern.
+- 📊 Count the number of matching lines.
+- ✂️ Extract matching portions from the text.
+- 🛠️ Built-in error handling for invalid options or arguments.
 
 ---
 
