@@ -5,6 +5,7 @@ rgrep is a Ruby command-line utility designed to search plain-text data files fo
 ---
 
 ## Table of Contents
+
 1. [Introduction](#introduction)
 2. [Features](#features)
 3. [Installation](#installation)
@@ -18,7 +19,7 @@ rgrep is a Ruby command-line utility designed to search plain-text data files fo
 
 ## Introduction
 
-<img src="assets/rgrep-logo.png" alt="rgrep Logo" width="200" />
+<img src="assets/download.jpeg" alt="rgrep Logo" width="200" />
 
 `rgrep` provides powerful pattern-matching capabilities using command-line options. It supports multiple search modes, including word search, regular expression search, and negated matching. Additional functionalities allow users to count or extract matches. With its simple interface, `rgrep` is a handy tool for text processing tasks.
 
@@ -46,6 +47,24 @@ rgrep is a Ruby command-line utility designed to search plain-text data files fo
 ## Usage
 
 ### On Unix-based Systems
+
 Use the script directly:
+
 ```bash
 $ path/to/rgrep/rgrep.rb [options] <pattern> <filename>
+
+```
+
+## Options
+
+| **Option**     | **Description**                                                                           | **Notes**               |
+| -------------- | ----------------------------------------------------------------------------------------- | ----------------------- |
+| `-w <pattern>` | Treats `<pattern>` as a word. Returns all lines containing the word.                      |                         |
+| `-p <pattern>` | Treats `<pattern>` as a regular expression. Returns all lines matching the regex.         | Default option.         |
+| `-v <pattern>` | Treats `<pattern>` as a regular expression. Returns all lines **not** matching the regex. |                         |
+| `-c <pattern>` | Used with `-w`, `-p`, or `-v`. Returns the number of lines that match the pattern.        | Must be used with `-p`. |
+| `-m <pattern>` | Used with `-w` or `-p`. Returns the matched part of each line that matches the pattern.   | Must be used with `-p`. |
+
+```
+
+```
